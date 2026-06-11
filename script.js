@@ -1,5 +1,11 @@
 function abrirSobre(){
 
+    const musica = document.getElementById("musica");
+
+    musica.play().catch(err => {
+        console.log(err);
+    });
+    
     document.querySelector(".sobre")
         .classList.add("abierto");
 
