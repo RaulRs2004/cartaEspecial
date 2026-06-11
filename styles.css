@@ -236,6 +236,15 @@ button:hover{
     opacity:1;
 }
 
+@media (max-width:768px){
+
+    .foto{
+        object-fit:contain;
+        background:white;
+    }
+
+}
+
 /* MENSAJE SECRETO */
 
 #btnSecreto{

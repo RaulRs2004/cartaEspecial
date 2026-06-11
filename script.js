@@ -5,7 +5,7 @@ function abrirSobre(){
     musica.play().catch(err => {
         console.log(err);
     });
-    
+
     document.querySelector(".sobre")
         .classList.add("abierto");
 
@@ -130,7 +130,7 @@ const fotosPorPersona = {
 
     ],
 
-    "jasmin": [
+    "estefany": [
         "imagesJas/jaz1.jpg",
         "imagesJas/jaz2.jpg",
         "imagesJas/jaz3.jpg",
