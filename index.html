@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Especial</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SOBRE -->
+    <div id="sobre-container">
+
+        <div class="sobre">
+
+            <div class="tapa"></div>
+
+            <button class="broche" onclick="abrirSobre()">
+                🔒
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- LOGIN -->
+    <div id="login">
+
+        <h2>Bienvenido</h2>
+
+        <input
+            type="text"
+            id="nombre"
+            placeholder="Ingresa tu nombre"
+        >
+
+        <button onclick="abrirCarta()">
+            Entrar
+        </button>
+
+        <p id="error"></p>
+
+    </div>
+
+    <!-- CARTA -->
+    <div id="carta">
+
+        <div class="contenido-carta">
+
+            <div class="texto">
+
+                <h2 id="titulo"></h2>
+
+                <p id="mensaje"></p>
+
+                <button id="btnSecreto">
+                    🔒 Mensaje secreto
+                </button>
+
+                <div id="secreto"></div>
+
+                <button onclick="mostrarFinal()">
+                    🌹 Terminar lectura
+                </button>
+
+            </div>
+
+            <div class="imagenes" id="imagenes"></div>
+
+        </div>
+
+    </div>
+
+    <!-- AUDIO -->
+    <audio id="musica" loop>
+        <source src="music/cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- PANTALLA FINAL -->
+    <div id="final">
+
+        <h2>Gracias por leer ❤️</h2>
+
+        <p>
+            Espero que este detalle te haya sacado una sonrisa.
+        </p>
+
+        <button onclick="location.reload()">
+            🌹 Volver a leer
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
